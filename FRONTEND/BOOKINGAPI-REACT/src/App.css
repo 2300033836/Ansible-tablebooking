@@ -1,0 +1,149 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #b80000;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #444;
+  margin-top: 20px;
+  text-align: center;
+  border-bottom: 2px solid #b80000;
+  padding-bottom: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.form input,
+.form select,
+.form textarea {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fffdf8;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  border-color: #b80000;
+  box-shadow: 0 0 5px rgba(184, 0, 0, 0.3);
+}
+
+.form select {
+  background-color: #fffdf8;
+  cursor: pointer;
+}
+
+.form textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  background-color: #b80000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #8f0000;
+}
+
+.delete {
+  background-color: #ff5555;
+}
+
+.delete:hover {
+  background-color: #d43b3b;
+}
+
+.message {
+  text-align: center;
+  font-weight: bold;
+  color: #006600;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.booking-item {
+  border: 1px solid #ddd;
+  background-color: #fff5f5;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.2s ease-in-out;
+}
+
+.booking-item:hover {
+  transform: scale(1.02);
+}
+
+.booking-item h3 {
+  margin: 0;
+  color: #b80000;
+}
+
+.booking-item p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 20px;
+  }
+
+  .booking-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
