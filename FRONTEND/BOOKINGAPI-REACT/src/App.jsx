@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
-const BASE_URL = "http://localhost:1818/bookingapi";
-//const BASE_URL = import.meta.env.VITE_API_URL + "/bookingapi";
+//const BASE_URL = "http://localhost:1818/bookingapi";
+const BASE_URL = import.meta.env.VITE_API_URL + "/bookingapi";
 
 
 
